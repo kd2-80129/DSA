@@ -12,7 +12,8 @@ public class LinearSearch {
 				System.out.println("Count of comparisions is : " + count);
 				return i;
 			}
-		}			
+		}	
+		System.out.println("Count of comparisions is : " + count);
 		return -1;
 	}
 	
