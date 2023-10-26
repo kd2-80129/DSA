@@ -7,7 +7,6 @@ public class BinearSearch {
 
 	public static int binarySearch(int arr[],int key) {
 		int count = 0, left = 0 ,right = arr.length - 1;
-		
 		while(left <= right) {
 			int mid = (left + right) / 2;
 			count++;
@@ -21,6 +20,7 @@ public class BinearSearch {
 					left = mid + 1;
 			}
 		}
+		System.out.println("Count of comparisons is : " + count);
 		return -1;
 	}
 	
@@ -37,7 +37,7 @@ public class BinearSearch {
 		if(result != -1)
 			System.out.println("The Index at which the key exists is : " + result);
 		else
-			System.out.println("key not found!!");
+			System.out.println("key not found!! ");
 		scan.close();
 	}
 
